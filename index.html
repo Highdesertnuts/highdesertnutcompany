@@ -3,79 +3,101 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>High Desert Nut Company</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
-body {
+body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f7f3ec;
-    color:#2b2b2b;
+    background:#F7F3EC;
+    font-family:'Montserrat', sans-serif;
+    color:#2E2E2E;
 }
 
 /* Header */
-header {
-    background:#3a2e25;
-    color:white;
-    padding:20px;
+header{
+    background:#6B4F3A;
+    color:#E9D8B4;
     text-align:center;
+    padding:18px;
 }
 
-nav a {
-    color:#f2e4c8;
-    margin:0 15px;
+header h1{
+    font-family:'Playfair Display', serif;
+    letter-spacing:1px;
+}
+
+nav a{
+    color:#E9D8B4;
     text-decoration:none;
-    font-weight:bold;
+    margin:0 14px;
+    font-weight:600;
 }
 
 /* Hero */
-.hero {
-    background:url('https://images.unsplash.com/photo-1604908176997-431a7dbd1a69?auto=format&fit=crop&w=1500&q=80');
+.hero{
+    height:450px;
+    background:url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1500&q=80');
     background-size:cover;
     background-position:center;
-    height:420px;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    color:white;
 }
 
-.hero h1 {
-    font-size:48px;
-    background:rgba(0,0,0,0.45);
-    padding:20px 30px;
-    border-radius:10px;
+.hero-text{
+    background:rgba(0,0,0,.45);
+    color:white;
+    padding:30px;
+    border-radius:12px;
+}
+
+.hero-text h2{
+    font-family:'Playfair Display', serif;
+    font-size:42px;
+    margin:0;
 }
 
 /* Sections */
-section {
-    padding:60px 20px;
+section{
     max-width:1000px;
     margin:auto;
+    padding:60px 20px;
     text-align:center;
 }
 
-.products {
+.products{
     display:flex;
     flex-wrap:wrap;
-    gap:25px;
     justify-content:center;
+    gap:28px;
 }
 
-.card {
+.card{
     background:white;
-    padding:20px;
-    border-radius:12px;
     width:260px;
-    box-shadow:0 6px 14px rgba(0,0,0,0.1);
+    border-radius:14px;
+    padding:25px;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+    transition:.25s;
 }
 
-footer {
-    background:#3a2e25;
-    color:white;
-    text-align:center;
-    padding:25px;
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card h3{
+    font-family:'Playfair Display', serif;
+    color:#6B4F3A;
+}
+
+footer{
+    background:#2E2E2E;
+    color:#E9D8B4;
+    padding:30px;
 }
 </style>
 </head>
@@ -86,7 +108,6 @@ footer {
     <h1>High Desert Nut Company</h1>
     <nav>
         <a href="#">Home</a>
-        <a href="#">Our Story</a>
         <a href="#">Products</a>
         <a href="#">Markets</a>
         <a href="#">Contact</a>
@@ -94,47 +115,49 @@ footer {
 </header>
 
 <div class="hero">
-    <h1>Small Batch • Hand Crafted • Desert Fresh</h1>
+    <div class="hero-text">
+        <h2>Handcrafted Desert Sweets</h2>
+        <p>Small Batch • Fresh Roasted • Made to Share</p>
+    </div>
 </div>
 
 <section>
     <h2>Welcome</h2>
     <p>
-        At High Desert Nut Company, we hand craft small-batch glazed nuts and sweets inspired by the flavors of the desert.
-        Every batch is roasted fresh and made to be shared.
+        Born in the High Desert, our nuts are roasted fresh in small batches and glazed with signature blends.
+        Crafted for markets, road trips, and late night cravings.
     </p>
 </section>
 
 <section>
-    <h2>Our Favorites</h2>
+    <h2>Customer Favorites</h2>
     <div class="products">
 
         <div class="card">
             <h3>Cinnamon Sugar Almonds</h3>
-            <p>Warm roasted almonds glazed in our signature cinnamon blend.</p>
+            <p>Warm roasted almonds in our signature glaze.</p>
         </div>
 
         <div class="card">
             <h3>Praline Pecans</h3>
-            <p>Rich buttery pecans coated in a golden caramel glaze.</p>
+            <p>Buttery caramel coating with a soft crunch.</p>
         </div>
 
         <div class="card">
             <h3>Sweet & Salty Mix</h3>
-            <p>The perfect balance of sweet crunch and savory finish.</p>
+            <p>The perfect balance of indulgence.</p>
         </div>
 
     </div>
 </section>
 
 <section>
-    <h2>Find Us At Local Markets</h2>
-    <p>We travel across the High Desert bringing fresh roasted treats to local events and markets every week.</p>
+    <h2>Find Us at the Market</h2>
+    <p>Order online and pick up at our next pop-up or have it shipped to your door.</p>
 </section>
 
 <footer>
     <p>© 2026 High Desert Nut Company</p>
-    <p>Email: highdesertnuts@email.com</p>
 </footer>
 
 </body>
